@@ -18,8 +18,3 @@ export interface Image {
   sys: { id: string; linkType: string; type: string };
   fields: ImageFields;
 }
-
-export interface TestimonialProps {
-  quote: string;
-  author: string;
-}

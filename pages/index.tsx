@@ -4,14 +4,9 @@ import { GetStaticProps } from 'next';
 import { createClient } from 'contentful';
 // import Testimonials, { TestimonialsProps } from '../components/Testimonials';
 // import About, { AboutProps } from '../components/About';
-import { Hero, HeroProps } from '../components/hero';
-import { LanguageButton } from '../components/languageButton';
+import { HomePage, HomePageProps } from 'components/pages/home';
+import { AppWrapper } from 'components/common';
 
-interface HomePageProps {
-  homepageContent: HeroProps;
-  // testimonialsContent: TestimonialsProps;
-  // aboutContent: AboutProps;
-}
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const client = createClient({
@@ -33,19 +28,15 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   };
 };
 
-export default function HomePage({ 
+export default function LandingPage({ 
   homepageContent, 
   // testimonialsContent, 
   // aboutContent 
 }: HomePageProps) {
-  console.log('hello!')
   return (
-    <div>
-      <LanguageButton />
-      <Hero {...homepageContent} />
-      
-      {/* <Testimonials content={testimonialsContent} />
-      <About content={aboutContent} /> */}
-    </div>
-  );
-};
+    <AppWrapper>
+      <HomePage homepageContent={homepageContent} />
+    </AppWrapper>
+  )
+}
+

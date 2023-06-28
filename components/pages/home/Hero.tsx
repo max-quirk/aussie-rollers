@@ -1,4 +1,4 @@
-import { Image } from '../types/index';
+import { Image } from '../../../types/image';
 
 export interface HeroProps {
   heroTitle: string;
