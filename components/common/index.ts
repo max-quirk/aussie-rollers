@@ -1,3 +1,3 @@
-export * from './CoreAppWrapper'
+export * from './CoreWrapperComponents'
 // export * from './Head'
 // export { SEO } from './SEO'

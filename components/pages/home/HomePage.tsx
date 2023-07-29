@@ -1,24 +1,17 @@
-import NavLanguageSelector from "components/navigation/NavLanguageSelector";
-import { Hero, HeroProps } from "./Hero";
+import { ContactSection } from "./ContactSection";
+import { FaqSection } from "./FaqSection";
+import { Hero } from "./Hero";
+import { TeamSection } from "./TeamSection";
+import { WhatIsItSection } from "./WhatIsItSection";
 
-export interface HomePageProps {
-  homepageContent: HeroProps;
-  // testimonialsContent: TestimonialsProps;
-  // aboutContent: AboutProps;
-}
-
-export function HomePage({ 
-  homepageContent, 
-  // testimonialsContent, 
-  // aboutContent 
-}: HomePageProps) {
+export function HomePage() {
   return (
-    <div>
-      <NavLanguageSelector />
-      <Hero {...homepageContent} />
-      
-      {/* <Testimonials content={testimonialsContent} />
-      <About content={aboutContent} /> */}
-    </div>
+    <>
+      <Hero />
+      <WhatIsItSection />
+      <TeamSection />
+      <FaqSection />
+      <ContactSection /> 
+    </>
   );
 };

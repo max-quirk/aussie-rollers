@@ -1,42 +1,25 @@
-// pages/index.tsx
+import { HomePage } from 'components/pages/home';
+import { useContentful } from '../contexts/contentful/ContentfulContext';
+import { PageSpecificContent } from '../models/contentful/globalContent';
+import { useEffect } from 'react';
+import { fetchContentfulPageData } from '../utils/fetchContentfulPageData';
 
-import { GetStaticProps } from 'next';
-import { createClient } from 'contentful';
-// import Testimonials, { TestimonialsProps } from '../components/Testimonials';
-// import About, { AboutProps } from '../components/About';
-import { HomePage, HomePageProps } from 'components/pages/home';
-import { AppWrapper } from 'components/common';
-
-
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID!,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
-  });
-
-  const resHomePage = await client.getEntries({ content_type: 'aussieRollersHomepage', locale });
-  // const resTestimonials = await client.getEntries({ content_type: 'testimonial', locale });
-  // const resAbout = await client.getEntries({ content_type: 'about', locale });
-
+export async function getServerSideProps() {
+  const homepageContent = await fetchContentfulPageData('homepage')
   return {
     props: {
-      homepageContent: resHomePage.items[0].fields,
-      // testimonialsContent: resTestimonials.items.map(item => item.fields),
-      // aboutContent: resAbout.items[0].fields,
+      homepageContent,
     },
-    revalidate: 1,
   };
-};
-
-export default function LandingPage({ 
-  homepageContent, 
-  // testimonialsContent, 
-  // aboutContent 
-}: HomePageProps) {
-  return (
-    <AppWrapper>
-      <HomePage homepageContent={homepageContent} />
-    </AppWrapper>
-  )
 }
 
+export default function LandingPage({ homepageContent }: { homepageContent: PageSpecificContent | null }) {
+  const { setPageSpecificContent, pageSpecificContent } = useContentful();
+
+  useEffect(() => {
+    setPageSpecificContent(homepageContent);
+  }, [homepageContent, setPageSpecificContent]);
+  if (!pageSpecificContent) return <div>404</div>
+
+  return <HomePage />
+}

@@ -1,5 +1,5 @@
 import { ThemeOption } from 'constants/themeOption';
-import type { ThemeContextType } from 'contexts/Theme/ThemeContext';
+import type { ThemeContextType } from 'contexts/theme/ThemeContext';
 import { useLayoutEffect, useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 

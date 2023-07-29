@@ -1,4 +1,4 @@
-import { ThemeContext } from 'contexts/Theme/ThemeContext'
+import { ThemeContext } from 'contexts/theme/ThemeContext'
 import { useContext } from 'react'
 
 export default function useMobile() {

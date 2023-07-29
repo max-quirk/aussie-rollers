@@ -1,5 +1,5 @@
-import { ThemeContext } from 'contexts/Theme/ThemeContext'
-import { useSiteTheme } from 'contexts/Theme/useSiteTheme'
+import { ThemeContext } from 'contexts/theme/ThemeContext'
+import { useSiteTheme } from 'contexts/theme/useSiteTheme'
 
 export const ThemeProvider: React.FC<React.PropsWithChildren<unknown>> = ({
   children,

@@ -1,10 +1,8 @@
-// NavLanguageSelector.tsx
-
 import { SUPPORTED_LANGUAGES } from '../../constants/locales';
 import { useRouter } from 'next/router';
 import { DropdownMenu } from '../ui/DropdownMenu';
 import { LanguageIcon } from '@heroicons/react/24/outline';
-import { useLanguage } from 'contexts/Language/LanguageContext';
+import { useLanguage } from 'contexts/language/LanguageContext';
 
 export default function NavLanguageSelector({
   className,

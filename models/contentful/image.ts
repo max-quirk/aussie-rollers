@@ -15,6 +15,7 @@ export interface ImageFields {
 }
 
 export interface Image {
-  sys: { id: string; linkType: string; type: string };
-  fields: ImageFields;
+  // sys: { id: string; linkType: string; type: string };
+  // fields: ImageFields;
+  url: string
 }

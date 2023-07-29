@@ -1,0 +1,57 @@
+.ant-btn {
+  background: transparent;
+  // @apply text-over-action-secondary;
+  @apply font-medium;
+  @apply font-body;
+  @apply rounded-md;
+  transition: all 100ms linear;
+  @apply h-10;
+  @apply px-8;
+
+  .anticon {
+    transition: margin 100ms linear;
+  }
+}
+
+.ant-btn-primary {
+  &:not(.ant-btn[disabled]) {
+    @apply bg-primary-700;
+    // @apply stroke-action-primary;
+    // @apply text-over-action-primary dark:text-gray-900;
+    box-shadow: none;
+  }
+
+  &:hover:not(.ant-btn[disabled]) {
+    @apply bg-primary-800;
+    // @apply text-over-action-primary;
+  }
+}
+
+.ant-btn-primary {
+  text-shadow: none;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+  border-color: transparent;
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12);
+  }
+}
+
+a.ant-btn:not(.ant-btn-link) {
+  line-height: 30px;
+  padding-top: 4px !important;
+}
+
+.ant-btn-lg {
+  //TODO: figure out css-dev-only thing and remove !important's
+  height: 48px !important; // h-13
+  padding: 0 36px 0 !important; // px-9
+  line-height: 38px !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+
+.ant-btn-sm {
+  padding: 4px 15px;
+}
