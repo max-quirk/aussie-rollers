@@ -1,9 +1,11 @@
 .ant-form-item {
-  @apply mb-14;
+  @apply mb-3;
+  @apply md:mb-14;
 }
 .ant-form-item {
   textarea {
-    @apply mt-5;
+    @apply mt-0;
+    @apply md:mt-5;
   }
 }
 
@@ -18,7 +20,8 @@
 
 .ant-form-item-label {
   @apply font-medium;
-  @apply mb-2.5;
+  @apply mb-0;
+  @apply md:mb-2.5;
   label:after {
     @apply hidden;
   }

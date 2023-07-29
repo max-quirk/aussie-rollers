@@ -41,7 +41,7 @@ export function ContactSection() {
           <div className={contactSectionTitlesClasses}>
             {homepageContent.contactSectionRightTitle}
           </div>
-          <p className="text-base mb-4">
+          <p className="text-base mb-4 text-center md:text-left">
             {homepageContent.contactSectionSubtitle}
           </p>
           <SimpleContactForm />

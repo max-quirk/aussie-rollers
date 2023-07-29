@@ -9,7 +9,7 @@ import { SocialIcon } from "react-social-icons"
 export function Header() {
   const { globalContent } = useContentful()
   const socialIconProps = {
-    className: 'h-7 w-7 bg-transparent'
+    className: 'h-7 w-7 bg-transparent hidden md:block'
   }
   return (
     <div className={twMerge('w-full flex justify-between py-5 bg-white', SITE_PADDING_X)}>

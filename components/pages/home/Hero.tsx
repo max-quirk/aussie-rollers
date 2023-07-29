@@ -19,7 +19,7 @@ export function Hero() {
         <div className='flex flex-col-reverse md:flex-row items-center justify-center gap-20 top-0 left-0'>
           {/* First column: Title, subtitle, review */}
           <div className='flex flex-col gap-6 max-w-md text-center md:text-left items-center md:items-start'>
-            <div className='block md:hidden'>
+            <div className='block mb-7 md:hidden'>
               {heroImage}
             </div>
             <h1 className="text-5xl font-bold font-title max-w-md">{homepageContent.heroTitle}</h1>

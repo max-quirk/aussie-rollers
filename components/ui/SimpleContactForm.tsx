@@ -35,11 +35,11 @@ export function SimpleContactForm() {
         <FundamentalInput />
       </Form.Item>
       <Form.Item name='message' label="Enquiry" required>
-        <Input.TextArea autoSize={{ minRows: 3, maxRows: 3 }} className="mt-11" />
+        <Input.TextArea autoSize={{ minRows: 3, maxRows: 3 }} className="mt-1 md:mt-11" />
       </Form.Item>
       <br/>
       <br/>
-      <div className='flex flex-col gap-4 mt-3'>
+      <div className='flex flex-col gap-4 md:mt-3'>
         <Button
           type="primary"
           htmlType="submit"
