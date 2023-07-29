@@ -4,9 +4,9 @@ import { HomepageContent } from "models/contentful/homepage/homepageContent";
 export const DUMMY_GLOBAL_CONTENT: GlobalContent = {
   footerCopywriteText: '© Aussie Rollers 2023',
   siteTitle: 'Aussie Rollers',
-  instagramUrl: '/gram/dettl',
+  instagramUrl: 'https://instagram.com/aussierollersbjj?igshid=Y2IzZGU1MTFhOQ==',
   contactEmail: 'max.dettl98@gmail.com',
-  mobile: '0416561552',
+  mobile: '+61416561552',
   logo: {
     url: '/assets/images/should-be-contentful/logo.webp'
   },

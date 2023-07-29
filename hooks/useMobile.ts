@@ -1,7 +1,5 @@
-import { ThemeContext } from 'contexts/theme/ThemeContext'
-import { useContext } from 'react'
+import { useMediaQuery } from 'react-responsive';
 
 export default function useMobile() {
-  const { isMobile } = useContext(ThemeContext)
-  return isMobile
+  return useMediaQuery({ query: '(max-width: 767px)' });
 }
