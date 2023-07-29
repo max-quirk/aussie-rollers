@@ -37,7 +37,7 @@ export function OneOfSixKeyPoints({
   return (
     <div 
       className={twMerge(
-        'border border-gray-300 p-14 flex flex-col items-center justify-start gap-6 text-center',
+        'border border-gray-300 px-6 py-14 md:p-14 flex flex-col items-center justify-start gap-6 text-center',
         isMobile ? mobileBorderClasses : itemBorderPosition()
       )}
     >
