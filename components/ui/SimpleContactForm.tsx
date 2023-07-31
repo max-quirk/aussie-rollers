@@ -14,7 +14,7 @@ export function SimpleContactForm() {
   const [submitLoading, setSubmitLoading] = useState<boolean>()
   const [submitted, setSubmitted] = useState<boolean>()
 
-  const { pageSpecificContent: homepageContent } = useContentful()
+  const { globalContent: { contactEmail }, pageSpecificContent: homepageContent } = useContentful()
   const [form] = Form.useForm<SimpleFormFields>()
 
   const onFormSubmit = () => {
@@ -48,9 +48,10 @@ export function SimpleContactForm() {
         >
           {homepageContent.contactSectionButtonText}
         </Button>
+        {/* TODO: FIX FORM */}
         {submitted ? 
           <span className="text-success-600">
-            Message sent!
+            Something went wrong. Please contact us by email.
           </span>
         : null}
       </div>
