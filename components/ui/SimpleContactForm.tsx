@@ -51,7 +51,8 @@ export function SimpleContactForm() {
         {/* TODO: FIX FORM */}
         {submitted ? 
           <span className="text-success-600">
-            Something went wrong. Please contact us by email.
+            Something went wrong. Please contact us by{' '}
+            <a href={`mailto:${contactEmail}`}>email</a>.
           </span>
         : null}
       </div>
