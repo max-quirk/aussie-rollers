@@ -14,11 +14,11 @@ export const DUMMY_GLOBAL_CONTENT: GlobalContent = {
 }
 
 export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
-  heroTitle: 'Brazilian Jiu Jitsu for youth',
+  heroTitle: 'Brazilian Jiu-Jitsu Camps and Programs',
   heroImage: {
     url: '/assets/images/should-be-contentful/hero.webp'
   },
-  heroSubtitle: 'Brisbane-based after-school BJJ lessons and vacation care.',
+  heroSubtitle: 'Brisbane-Based BJJ: After-School Programs, OSHC Incursions, NDIS Programs, Grappling for Contact Sport and Private Lessons.',
   heroCtaText: 'Enquire now',
   heroReview: {
     content: "After just a few sessions, I saw a dramatic difference in my children’s confidence, self-discipline, and overall behaviour. Each session is packed with high-energy fun, and the skills they have learnt with Max have been immeasurable - on and off the mats!",
@@ -56,7 +56,7 @@ export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
   ],
   
   teamSectionTitle: "Meet our team",
-  teamSectionSubtitle: "A BJJ professional and two teacher-trainees; all certified in CPR, first aid, and blue cards, forging unique BJJ experiences.",
+  teamSectionSubtitle: "Experienced BJJ coaching and soon to be teachers; all holding Blue Cards and  CPR/First Aid trained forging unmatched program expertise.",
   team: [
     {
       name: "Max Dettl",
