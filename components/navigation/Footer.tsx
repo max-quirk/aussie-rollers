@@ -15,7 +15,7 @@ export function Footer() {
       <div className="flex flex-col md:flex-row gap-8 md:gap-14 items-center">
         <div>
           <img 
-            src="/assets/images/should-be-contentful/hyperfly-logo.webp" 
+            src="/assets/images/should-be-contentful/logo-text.png" 
             alt="Hyperfly logo"
             width={200}
           />

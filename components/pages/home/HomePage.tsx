@@ -8,10 +8,10 @@ export function HomePage() {
   return (
     <>
       <Hero />
+      <ContactSection /> 
       <WhatIsItSection />
       <TeamSection />
       <FaqSection />
-      <ContactSection /> 
     </>
   );
 };

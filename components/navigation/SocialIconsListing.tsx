@@ -9,7 +9,8 @@ export function SocialIconsListing({
 }) {
   const { globalContent } = useContentful()
   const socialIconProps = {
-    className: twMerge('h-6 w-6 md:h-7 md:w-7', className)
+    className: twMerge('h-6 w-6 md:h-7 md:w-7 ', className),
+    bgColor: "indigo"
   }
   return (
     <div className='flex gap-2 md:gap-3'>

@@ -52,7 +52,7 @@ export function SimpleContactForm() {
         {submitted ? 
           <span className="text-success-600">
             Something went wrong. Please contact us by{' '}
-            <a href={`mailto:${contactEmail}`}>email</a>.
+            <a className="text-primary-800" href={`mailto:${contactEmail}`}>email</a>.
           </span>
         : null}
       </div>

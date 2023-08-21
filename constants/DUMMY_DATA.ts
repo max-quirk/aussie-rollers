@@ -5,7 +5,7 @@ export const DUMMY_GLOBAL_CONTENT: GlobalContent = {
   footerCopywriteText: '© Aussie Rollers 2023',
   siteTitle: 'Aussie Rollers',
   instagramUrl: 'https://instagram.com/aussierollersbjj?igshid=Y2IzZGU1MTFhOQ==',
-  contactEmail: 'max.dettl98@gmail.com',
+  contactEmail: 'info@aussierollersbjj.com.au',
   mobile: '+61416561552',
   logo: {
     url: '/assets/images/should-be-contentful/logo.webp'
@@ -16,13 +16,13 @@ export const DUMMY_GLOBAL_CONTENT: GlobalContent = {
 export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
   heroTitle: 'Brazilian Jiu-Jitsu Camps and Programs',
   heroImage: {
-    url: '/assets/images/should-be-contentful/hero.webp'
+    url: '/assets/images/should-be-contentful/logo-big.webp'
   },
   heroSubtitle: 'Brisbane-Based BJJ: After-School Programs, OSHC Incursions, NDIS Programs, Grappling for Contact Sport and Private Lessons.',
   heroCtaText: 'Enquire now',
   heroReview: {
     content: "After just a few sessions, I saw a dramatic difference in my children’s confidence, self-discipline, and overall behaviour. Each session is packed with high-energy fun, and the skills they have learnt with Max have been immeasurable - on and off the mats!",
-    title: "Best vacation care in Brisbane!", 
+    title: "Immeasurable skills - on and off the mat!", 
     name: "Krissy", 
     headshotUrl: '',
   },
@@ -39,7 +39,7 @@ export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
     },
     {
       name: 'Conflict Resolution',
-      content: "BJJ teaches students the importance of non-violent conflict resolution and how to respond to conflicts in a controlled manner."
+      content: "BJJ teaches students the importance of cooperative conflict resolution and how to respond to conflicts in a controlled manner."
     },
     {
       name: 'Problem Solving',
@@ -56,7 +56,7 @@ export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
   ],
   
   teamSectionTitle: "Meet our team",
-  teamSectionSubtitle: "Experienced BJJ coaching and soon to be teachers; all holding Blue Cards and  CPR/First Aid trained forging unmatched program expertise.",
+  teamSectionSubtitle: "Experienced Coaching  -  OSHC and Teaching Experience  -  First Aid/CPR Trained  -  Blue Card and Police Checked",
   team: [
     {
       name: "Max Dettl",
@@ -69,7 +69,7 @@ export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
     {
       name: "Claire Worland",
       jobTitle: "Operations",
-      content: "Soon to finish her Master’s in Teaching and enriched with OSHC experience, Claire infuses her passion for children's wellbeing into Aussie Rollers' programs.",
+      content: "Soon to finish her Master’s in Teaching and enriched with OSHC experience, Claire brings incorporates her passion for children's wellbeing into Aussie Rollers' programs.",
       headshotImage: {
         url: '/assets/images/should-be-contentful/claire-headshot.webp'
       }
@@ -83,11 +83,11 @@ export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
       }
     },
   ],
-  faqSectionTitle: 'FAQ',
+  faqSectionTitle: 'FAQs',
   faqs: [
     {
       question: "Is BJJ safe?",
-      answer: "Absolutely. Just like any sport, BJJ is safe with instructors constantly monitoring to minimize risk."
+      answer: "Absolutely, BJJ is very safe. We run risk assessments on all of our sessions and our instructors are constantly monitoring to ensure any potential risk is avoided."
     },
     {
       question: "Is BJJ good for kids?",
@@ -95,19 +95,19 @@ export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
     },
     {
       question: "Can both girls and boys do BJJ?",
-      answer: "Yes, BJJ is gender-neutral and beneficial for both girls and boys."
+      answer: "Yes! BJJ can be practiced by everyone, regardless of their gender."
     },
     {
       question: "How are classes structured?",
-      answer: "Each class includes a warm-up, technique instruction, and concludes with practical games applying the taught techniques."
+      answer: "Classes are program dependent but generally each class includes a warm-up, technical instruction and concludes with games or technique specific drills."
     },
     {
       question: "How should I prepare?",
-      answer: "No specific preparation is necessary. However, we are available to address any questions or concerns."
+      answer: "No preparation is necessary. However, if you have any hesitations, feel free to contact us!"
     },
     {
       question: "What do I need to bring?",
-      answer: "Simply bring yourself! We provide uniforms for new students and assist in procuring personal ones for continued training."
+      answer: "We provide uniforms, all the required equipment and are able to assist in providing personal gear for students if requested."
     },
     {
       question: "What will I learn?",
@@ -123,11 +123,11 @@ export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
     },
     {
       question: "Who can I contact to find out more?",
-      answer: "Feel free to connect with us at 0416561552, aussierollersbjj@gmail.com, or on our Instagram @aussierollersbjj."
+      answer: "Feel free to connect with us at 0416-561-552, info@aussierollersbjj.com.au, or on our Instagram @aussierollersbjj."
     },
     {
       question: "How do I get started?",
-      answer: "To begin, complete our enquiry form and our team will reach out. Alternatively, direct contact is always welcome!"
+      answer: "To begin, complete our enquiry form and our team will reach out. Alternatively, contact us directly!"
     },
   ],
   contactSectionLeftTitle: 'Welcome to our community',
@@ -141,6 +141,6 @@ export const DUMMY_HOMEPAGE_CONTENT: HomepageContent = {
     name: "Dani", 
     headshotUrl: '',
   },
-  contactSectionSubtitle: "To discover how our tailored BJJ programs can benefit your school, fill out the form below and we'll be in touch promptly.",
+  contactSectionSubtitle: "To discover how our tailored BJJ programs can benefit you, fill out the form below and we will be in touch shortly!",
   contactSectionButtonText: "Submit Enquiry",
 }

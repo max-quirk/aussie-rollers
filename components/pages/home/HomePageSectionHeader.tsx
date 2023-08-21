@@ -7,7 +7,7 @@ export function HomePageSectionHeader({
 }) { 
   return (
     <div className='flex flex-col gap-5 text-center pb-16 max-w-xl'>
-      <div className="font-heading font-medium text-4xl">
+      <div className="font-heading font-medium text-4xl text-primary-800">
         {title}
       </div>
       {subtitle ? (
